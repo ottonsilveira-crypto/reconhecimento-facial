@@ -1,0 +1,27 @@
+{
+  "seed": 42,
+  "dataset": "LFW via scikit-learn fetch_lfw_people",
+  "min_faces_per_person": 10,
+  "max_images_per_identity": 40,
+  "identity_split": {
+    "train": 0.70,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "model": "ResNet-18 pretrained on ImageNet + 128-dimensional embedding head",
+  "loss": "ArcFaceLoss from pytorch-metric-learning",
+  "training": {
+    "head_only_epochs": 3,
+    "layer4_finetuning_epochs": 5,
+    "batch_size": 32,
+    "images_per_identity_per_batch": 4,
+    "head_learning_rate": 0.001,
+    "layer4_learning_rate": 0.00002,
+    "arcface_learning_rate": 0.01
+  },
+  "threshold": {
+    "method": "99th percentile of impostor cosine similarities on validation identities",
+    "target_far": 0.01
+  },
+  "note": "Configuração inicial para execução e ajuste; registrar alterações efetivamente feitas."
+}

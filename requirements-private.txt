@@ -1,0 +1,3 @@
+# Dependências adicionais para processar fotografias privadas LOCALMENTE
+# Não é necessário instalar este arquivo para executar o experimento público no Colab.
+opencv-python-headless>=4.8

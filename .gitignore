@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Dataset downloads and private biometric data
+data/raw/
+data/processed/
+data/private/*
+!data/private/README.md
+
+# Local model artifacts/checkpoints (especially anything derived from private data)
+artifacts/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Local caches
+.cache/
+scikit_learn_data/
+

@@ -1,0 +1,4 @@
+experiment,threshold,accuracy,precision,recall,f1,roc_auc,far,frr,genuine_similarity_mean,impostor_similarity_mean,TN,FP,FN,TP,strategy
+E01,0.9011,0.9464,0.2900,0.1319,0.1813,0.7649,0.0152,0.8681,0.8372,0.7687,132330,2047,5502,836,"ImageNet pretrained ResNet-18; no fine-tuning"
+E02,0.6187,0.9461,0.3064,0.1549,0.2058,0.8045,0.01654,0.8451,0.3628,0.0444,132154,2223,5356,982,"ArcFace embedding head trained; backbone frozen"
+E03,0.4007,0.9504,0.3944,0.1882,0.2548,0.8303,0.01363,0.81177,0.2440,0.01026,132545,1832,5145,1193,"ArcFace head trained; layer4 partially fine-tuned"
