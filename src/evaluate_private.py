@@ -41,7 +41,7 @@ def make_detector():
     if not YUNET_PATH.exists():
         print("Baixando o detector YuNet (o arquivo ficará local em artifacts/)...")
         urllib.request.urlretrieve(YUNET_URL, YUNET_PATH)
-    return cv2.FaceDetectorYN.create(str(YUNET_PATH), "", (320, 320), 0.7, 0.3, 50)
+    return cv2.FaceDetectorYN.create(str(YUNET_PATH), "", (320, 320), 0.61, 0.3, 5000)
 
 
 def align_image(image_rgb, detector):
