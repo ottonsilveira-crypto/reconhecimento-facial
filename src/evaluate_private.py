@@ -128,7 +128,7 @@ def main():
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
 
-    print("Processamento local: as fotografias privadas não serão enviadas para nenhum serviço por este script.")
+     print(     "As fotos privadas são processadas pelo script e não são enviadas "     "a serviços externos por este código. Como o ambiente pode ser o "     "Google Colab e os arquivos podem estar no Google Drive, isso não "     "significa processamento exclusivamente local." )
     detector = make_detector()
     private_people = load_private(detector)
 
