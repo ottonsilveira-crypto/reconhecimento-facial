@@ -146,7 +146,7 @@ def main():
             "split": "por identidade: 70% treino / 15% validação / 15% teste, seed fixa",
             "threshold_selection": "quantil 99% das similaridades de impostores na validação; não ajustado no teste",
             "training_epochs": {"head_only": 3, "layer4_finetuning": 5},
-            "results": [base_metrics, ft_metrics],
+            "results": [base_metrics, head_metrics, ft_metrics],
             "caveat": "O limiar e as métricas são estimativas do protocolo e do conjunto utilizado; interpretar com limitações do LFW."
         }, f, ensure_ascii=False, indent=2)
     pd.DataFrame({"epoch": np.arange(1, len(history) + 1), "arcface_loss": history}).to_csv(
