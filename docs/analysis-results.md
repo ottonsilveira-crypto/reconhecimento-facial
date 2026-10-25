@@ -87,12 +87,3 @@ A redução da loss dentro de cada fase indica progresso no objetivo de treiname
 - **Escopo:** a avaliação realizada não comprova adequação para vigilância, identificação em situações reais ou decisões de alto impacto.
 
 O projeto deve ser considerado experimental. Qualquer avaliação com participantes deve respeitar o consentimento informado, a finalidade autorizada e as condições aplicáveis ao tratamento de dados biométricos.
-
-## 5. Verificações antes da entrega
-
-- [ ] Confirmar que `results/similarity_distributions.png` corresponde à mesma execução que produziu as métricas apresentadas.
-- [ ] Confirmar que `results/experiment_summary.json` contém as configurações e os resultados dos três experimentos.
-- [ ] Registrar as versões efetivamente utilizadas das bibliotecas e o hardware da execução. O ambiente reportado foi uma GPU NVIDIA Tesla T4 no Google Colab.
-- [ ] Conferir a consistência entre este relatório, o `README.md`, os CSVs e o resumo JSON.
-- [ ] Preparar a demonstração em vídeo e verificar todos os requisitos da atividade.
-- [ ] Se houver avaliação privada na atividade, realizá-la apenas com consentimento adequado e não publicar fotos, embeddings, formulários ou checkpoints derivados de dados privados.
